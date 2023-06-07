@@ -1,0 +1,92 @@
+[mode |=light]
+{
+    --colerBG:				rgb(255,255,255);
+    --colorBoxShade:		rgb(38, 20, 71);
+    --colorH2:				rgb(45, 226, 230);
+    --colorTX:				rgb(0,0,0);
+    --color_NB_BG: 			rgb(37,40,44);
+    --color_NB_TX: 			rgb(0,0,0);
+    --color_NB_Hover_BG:	rgb(221, 221, 221);
+    --color_NB_Hover_TX:	rgb(0,0,0);
+    --color_NB_Atcive:		rgb(119,110,208);
+}
+[mode |=dark]
+{
+    --colerBG:				rgb(30,30,30);
+    --colorBoxShade:		rgb(38, 20, 71);
+    --colorH2:				rgb(45, 226, 230);
+    --colorTX:				rgb(225,225,225);
+    --color_NB_BG: 			rgb(37,40,44);
+    --color_NB_TX: 			rgb(220,220,220);
+    --color_NB_Hover_BG:	rgb(221, 221, 221);
+    --color_NB_Hover_TX:	rgb(0,0,0);
+    --color_NB_Atcive:		rgb(119,110,208);
+    --color_Card_header:	rgb(125,125,125);
+    --color_Card_Body: 		rgb(200,200,200);
+    --color_Card_Text: 		rgb(0,0,0);
+}
+body
+{
+    background-color: var(--colerBG);
+    color: var(--colorTX);
+	top:0px;
+	left:0px:	
+}
+.HEADER
+{
+	width:100%;
+	height:10px;
+	background-color:rgb(200,200,180);
+	color:black;
+	border:10px;
+	font-size:10px;
+	
+}
+.div_grid
+{
+    display: grid;
+    grid-template-areas:
+    'video_webcam'
+    'button_row'
+    'console_view';
+}
+
+.video_webcam_view
+{
+    height: 720px;
+    width: 100%;
+    background-color: blue;
+	border:0px;
+	border:4px solid black;
+}
+.video_webcam_view>img
+{
+	border:0px;
+}
+.button_row
+{
+    height: 55px;
+    width: calc(100%-10px);
+	background-color: rgb(33,33,33);
+	padding:10px;
+	border:4px solid black
+
+}
+.button_row>button
+{
+	width:200px;
+	height:50px;
+	background-color:rgb(80,80,80);
+	border:0px;
+	margin:auto;
+	color:rgb(255,255,255);
+	border:4px solid black;
+}
+.console_view
+{
+    background-color: rgb(80,80,80);
+    height: 100px;
+    width: calc(100%-10px);
+	border:4px solid black;
+	padding:10px;
+}
